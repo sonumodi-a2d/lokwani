@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Latest News | Lokwani</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <img src="image/lokwani-news-logo.png" alt="logo" class="logo">
+        </div>
+        <div class="nav-section">
+            <nav>
+                <ul class="nav-area">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Work</a></li>
+                    <li><a href="/">Clients</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="app-section">
+            <img src="image/google-play-badge.png" alt="logo" class="play-store">
+        </div>
+    </header>
+    
+
+    <div class="news-section">
+        <div class="category-sidebar">
+            <div class="cen-nav">
+                <ul id="navbar" class="side-nav">
+
+                </ul>
+            </div>
+        </div>
+        <div class="main-news-section">
+            <div class="latest-news">
+                <h2>Latest News</h2>
+                <div id="latest-root">
+                </div>
+            </div>
+            <div class="loader">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <img src="image/lokwani-news.webp" alt="Lokwani News Website">
+        </div>
+    </div>
+
+      <!-- read more popup box start -->
+   <div class="popup-box">
+    <div class="popup-content">
+        <div class="popup-header">
+           <h3></h3>
+           <span class="popup-close-icon">&times;</span>
+        </div>
+        <div class="popup-body">
+          
+        </div>
+        <div class="popup-footer">
+          <button class="btn popup-close-btn">Close</button>
+        </div>
+    </div>
+ </div>
+<!-- read more popup box end -->
+
+    
+    <script>window.addEventListener("DOMContentLoaded",function(){jQuery(document).ready(function(e){var i=e(window).height()-e(".header").height();e(".category-sidebar").css({height:i,position:"fixed"}),e(".right-sidebar").css({height:i,position:"fixed"})})});</script>
+    <script src="js/loader.js"></script>
+    <script src="js/popup.js"></script>
+    
+</body>
+</html>
